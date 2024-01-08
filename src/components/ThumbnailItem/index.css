@@ -1,0 +1,17 @@
+/* Write your code here. */
+.container {
+  list-style: none;
+  margin: auto;
+}
+.button {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.act-img-btn {
+  opacity: 0.5;
+}
+
+.image {
+  width: 55px;
+}
