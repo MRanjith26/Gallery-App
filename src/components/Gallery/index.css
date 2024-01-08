@@ -7,18 +7,17 @@
   align-items: center;
 }
 .gallery {
-  margin: auto;
+  margin: 20px;
 }
 
 .image-container {
   margin: auto;
 }
 .thumbnail-container {
-  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
+  list-style: none;
+  padding: 0px;
   padding-inline-start: 0px;
 }
 
@@ -33,15 +32,6 @@
   color: #64748b;
 }
 .img {
-  width: 300px;
-}
-
-@media screen and (min-width: 768px) {
-  .thumbnail-container {
-    flex-direction: row;
-    margin: auto;
-  }
-  .img {
-    width: 550px;
-  }
+  max-width: 1000px;
+  width: 85%;
 }

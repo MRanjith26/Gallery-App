@@ -1,17 +1,18 @@
 /* Write your code here. */
 .container {
   list-style: none;
-  margin: auto;
+  margin-right: 16px;
+  margin-top: 16px;
 }
 .button {
   background-color: #ffffff;
   border: none;
   cursor: pointer;
+  outline: none;
+}
+.image {
+  max-width: 40px;
 }
 .act-img-btn {
   opacity: 0.5;
-}
-
-.image {
-  width: 55px;
 }

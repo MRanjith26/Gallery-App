@@ -75,18 +75,15 @@ const imagesList = [
 
 // Write your code here.
 class Gallery extends Component {
-  state = {imagesActive: imagesList[0]}
+  state = {imagesActive: imagesList[0].id}
 
   getActiveImgId = id => {
-    const filteredImagesList = imagesList.filter(
-      eachImage => eachImage.id === id,
-    )
-    this.setState({imagesActive: filteredImagesList[0]})
+    this.setState({imagesActive: id})
   }
 
   render() {
     const {imagesActive} = this.state
-    const {imageUrl, imageAltText} = imagesActive
+    const {imageUrl, imageAltText} = imagesList[imagesActive]
     return (
       <div className="bg-container">
         <div className="gallery">
